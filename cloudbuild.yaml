@@ -1,10 +1,10 @@
 steps:
 # Install node package
-- name: 'gcr.io/cloud-builders/npm:node-16.10.0'
+- name: 'gcr.io/cloud-builders/npm'
   args: [ 'install' ]
 
 # Build files
-- name: 'gcr.io/cloud-builders/npm:node-16.10.0'
+- name: 'gcr.io/cloud-builders/npm'
   args: [ 'run', 'build', '--prod' ]
 
 # Deploy to google cloud app engine.
