@@ -4,7 +4,7 @@ steps:
   args: [ 'install' ]
 
 # Build files
-- name: 'gcr.io/cloud-builders/npm:node-16.0.0
+- name: 'gcr.io/cloud-builders/npm:node-16.0.0'
   args: [ 'run', 'build', '--prod' ]
 
 # Deploy to google cloud app engine.
